@@ -11,14 +11,14 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             System.Console.WriteLine("Enter Integer number");
-            String temp;
-            temp = Console.ReadLine();
+           // String temp;
+          //  temp = Console.ReadLine();
 
             int intnumber;
-            intnumber = Convert.ToInt32(temp);
+            intnumber = Convert.ToInt32(Console.ReadLine());
 
             double dnumber = Math.Sqrt(intnumber);
-            System.Console.WriteLine("Square of the number\t" + dnumber);
+            System.Console.WriteLine("Square root of the number\t" + dnumber);
         }
     }
 }

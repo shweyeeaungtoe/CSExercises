@@ -24,7 +24,7 @@ namespace CSExercises
 
             double area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
 
-            System.Console.WriteLine(area);
+            System.Console.WriteLine("Area\t" + area);
 
         }
     }

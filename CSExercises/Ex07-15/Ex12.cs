@@ -18,6 +18,7 @@ namespace CSExercises
             distance = Convert.ToDouble(System.Console.ReadLine());
 
             double cal_price = 2.40 + distance * 0.4;
+
            // double round_price = Math.Round(cal_price);
 
             System.Console.WriteLine("The Total Fare {0:##.00}  \t", cal_price);

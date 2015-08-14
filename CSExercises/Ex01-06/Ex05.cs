@@ -11,11 +11,11 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             System.Console.WriteLine("Enter Double number");
-            String temp;
-            temp = Console.ReadLine();
+           // String temp;
+           // temp = Console.ReadLine();
 
             double dnumber;
-            dnumber = Convert.ToDouble(temp);
+            dnumber = Convert.ToDouble(Console.ReadLine());
 
             double sqrtnumber = Math.Sqrt(dnumber);
             System.Console.WriteLine("Square root of the number\t" + sqrtnumber);
