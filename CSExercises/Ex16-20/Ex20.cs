@@ -10,11 +10,15 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            int TV_discount = 0, TV_realprice=0;
+           
+            /*int TV_discount = 0, TV_realprice=0;
             int DVD_discount = 0, DVD_realprice = 0;
        
             int total_orderprice = 0;
-            int total_orderquantity = 0;
+            int total_orderquantity = 0;*/
+
+
+            int order_discount = 0, order_realprice = 0;
 
             int tv_price = 900;
             int dvd_price = 500;
@@ -35,7 +39,33 @@ namespace CSExercises
             int DVDtotal_price = dvd_price * DVD_quantity;
             int MP3total_price =  mp3_price * MP3_quantity;
 
-            if (TVtotal_price > 0)
+            int orderamount = TVtotal_price + DVDtotal_price;
+
+            if (orderamount > 0)
+            {
+                if (orderamount > 5000 && orderamount <= 10000)
+                {
+                    order_discount = (orderamount * 10) / 100;
+                    order_realprice = orderamount - order_discount;
+                    System.Console.WriteLine(order_realprice);
+                }
+                if (orderamount > 10000)
+                {
+                    order_discount = (orderamount * 15) / 100;
+                    order_realprice = orderamount - order_discount;
+                    System.Console.WriteLine(order_realprice);
+                }
+                if (orderamount <= 5000)
+                {
+                    order_realprice = orderamount;
+                }
+            }
+
+            int total_orderprice = order_realprice + MP3total_price;
+             System.Console.Write("****************************************************************\n\nTotal price for this order is \t" + total_orderprice + "\n\n");
+
+
+          /*  if (TVtotal_price > 0)
             {
                 if (TVtotal_price > 5000 && TVtotal_price <= 10000)
                 {
@@ -83,7 +113,7 @@ namespace CSExercises
 
 
             System.Console.Write("\nTotal quantity for this order is \t" + total_orderquantity+"\n");
-            System.Console.Write("****************************************************************\n\nTotal price for this order is \t" + total_orderprice + "\n\n");
+            System.Console.Write("****************************************************************\n\nTotal price for this order is \t" + total_orderprice + "\n\n");*/
         }
     }
 }
