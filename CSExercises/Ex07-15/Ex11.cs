@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
 
-            double minimum_fixed_charge = 2.40;
+       
              
             double distance;
             System.Console.Write("Input the distance travelled :\t");
