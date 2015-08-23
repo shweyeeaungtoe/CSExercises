@@ -91,7 +91,7 @@
     <Compile Include="Ex45-46\Ex45.cs" />
     <Compile Include="Ex45-46\Ex46.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SnakeGame.cs" />
+    <Compile Include="SnakeGame\SnakeGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
